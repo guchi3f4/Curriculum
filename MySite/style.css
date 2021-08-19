@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #ec715f;
+}
+
+nav {
+  float: right;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.header-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  height: 70px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0 30px;
+  font-size: 16px;
+  color: #fafafa;
+  line-height: 70px;
+}
+
+.main-visual {
+  height: 650px;
+  background-image: url(img/mv.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 200px;
+  color: #fafafa;
+}
+
+.main-visual h1 {
+  font-size: 64px;
+}
+
+.main-visual p {
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+#Portfolio {
+  background-color: #eceff1;
+}
+
+.heading {
+  font-size: 32px;
+  color: #000;
+  position: relative;
+  text-align: center;
+  padding-top: 90px;
+  margin-bottom: 8px;
+}
+
+.heading:after {
+  content: "";
+  display: block;
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+  height: 3px;
+  width: 70px;
+  margin-top: 8px;
+  background-color: #ec715f;
+}
+
+.heading-text {
+  font-size: 16px;
+  color: #000;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.production-group {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 90px;
+  width: 920px;
+  margin: 0 auto;
+}
+
+.production {
+  width: 300px;
+  height: 250px;
+  margin-right: 10px;
+}
+
+.production:nth-child(-n + 3) {
+  margin-bottom: 10px;
+}
+.production:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.strength-group {
+  display: flex;
+}
+
+.strength {
+  width: 320px;
+  height: auto;
+  text-align: center;
+  width: 980px;
+  padding-bottom: 90px;
+  margin: 0 auto;
+}
+
+.strength:nth-child(-n + 2) {
+  margin-right: 10px;
+}
+
+.strength i {
+  font-size: 60px;
+}
+
+.strength h3 {
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.strength p {
+  text-align: left;
+}
+
+#Profile {
+  background-color: #eceff1;
+}
+
+.profile-group {
+  display: flex;
+  padding-bottom: 90px;
+}
+
+.profile-left {
+  width: 50%;
+}
+
+.profile-image {
+  width: 250px;
+  height: 250px;
+  background-image: url(img/my-icon.jpg);
+  border-radius: 125px;
+}
+
+.profile-right {
+  width: 50%;
+}
+
+.profile-image {
+  margin: 0 auto;
+}
+
+.description-title {
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.description-title:nth-child(3) {
+  margin-top: 20px;
+}
+
+.description-text {
+  font-size: 16px;
+}
+
+.contact-group {
+  display: flex;
+  width: 800px;
+  padding-bottom: 90px;
+  margin: 0 auto;
+}
+
+.contact-left,
+.contact-right {
+  width: 50%;
+}
+
+.contact-left-content {
+  width: 180px;
+  margin: 0 auto;
+}
+
+.contact-right-content {
+  margin: 0 auto;
+  width: 180px;
+}
+
+.contact-right i {
+  font-size: 50px;
+  margin-right: 20px;
+}
+.contact-right i:nth-last-child(1) {
+  margin-right: 0px;
+}
+
+footer {
+  height: 60px;
+  background-color: #ec715f;
+}
+
+footer p {
+  font-size: 16px;
+  line-height: 60px;
+  text-align: center;
+  color: #fafafa;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .sp-none {
+    display: none;
+  }
+
+  .header-group {
+    height: 50px;
+  }
+
+  .header-logo {
+    height: 50px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .menu-box {
+    font-size: 28px;
+    color: #fafafa;
+  }
+
+  .menu-box i {
+    margin: 5px 15px 5px 0;
+    padding: 5px 7px;
+    border: 1px solid;
+  }
+
+  .main-visual {
+    background-image: url(img/code.png);
+  }
+
+  .main-visual h1 {
+    font-size: 40px;
+  }
+
+  .main-visual p {
+    font-size: 18px;
+  }
+
+  .production-group {
+    width: 100%;
+  }
+
+  .production {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+  .production:nth-child(-n + 5) {
+    margin-bottom: 10px;
+  }
+
+  .strength-group {
+    flex-flow: wrap;
+  }
+
+  .profile-group {
+    flex-flow: wrap;
+  }
+
+  .profile-left {
+    width: 100%;
+  }
+
+  .profile-right {
+    width: 100%;
+  }
+
+  .contact-group {
+    flex-flow: column;
+    width: 100%;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+    text-align: center;
+  }
+}
